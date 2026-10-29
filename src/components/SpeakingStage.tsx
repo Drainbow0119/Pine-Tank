@@ -16,6 +16,7 @@ import {
 import type { DialogueLesson, DialogueTurn } from "../data/dialogues";
 import type { EvaluationResult } from "../utils/dialogueEngine";
 import type { MicButtonState } from "../hooks/useSpeechTools";
+import mascotEmblemUrl from "../assets/images/pineapple_mascot_emblem_1793235439299.jpg";
 
 interface SpeakingStageProps {
   mode: "start" | "practice";
@@ -104,7 +105,7 @@ export function SpeakingStage({
               <div className="w-12 h-12 rounded-xl overflow-hidden bg-[#F3F1EA] shrink-0 flex items-center justify-center">
                 {!mascotImgFailed ? (
                   <img
-                    src="/src/assets/images/pineapple_mascot_emblem_1793235439299.jpg"
+                    src={mascotEmblemUrl}
                     alt="Pine small-talk mascot emblem"
                     referrerPolicy="no-referrer"
                     onError={() => setMascotImgFailed(true)}

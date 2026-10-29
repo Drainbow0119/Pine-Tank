@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Check, Compass, Sparkles } from "lucide-react";
 import type { DialogueLesson } from "../data/dialogues";
 import type { TurnProgressRecord } from "../utils/dialogueEngine";
+import cafePostcardUrl from "../assets/images/seoul_cafe_postcard_1793235439009.jpg";
 
 interface DialogueSidebarProps {
   lessons: DialogueLesson[];
@@ -32,7 +33,7 @@ export function DialogueSidebar({
         <div className="aspect-[16/9] w-full bg-[#F3F1EA] relative overflow-hidden">
           {!bannerImgFailed ? (
             <img
-              src="/src/assets/images/seoul_cafe_postcard_1793235439009.jpg"
+              src={cafePostcardUrl}
               alt="Sunlit cafe table in Seoul overlooking Namsan"
               referrerPolicy="no-referrer"
               onError={() => setBannerImgFailed(true)}
