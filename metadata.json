@@ -1,0 +1,10 @@
+{
+  "name": "I'm Pine, Tank you! - Small Talk Assistant",
+  "description": "Interactive English small-talk speaking assistant helping high school B1-B2 learners build confidence in friendly, culturally natural conversations with strangers.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
